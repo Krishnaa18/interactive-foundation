@@ -4,6 +4,18 @@
   <meta charset="utf-8" />
   <title>  Nair Typeface Project </title>
   <style>
+
+       .letterA {
+        opacity:0%;
+        transition:opacity 0.5s;
+        
+    }
+
+      .letterA:hover {
+        opacity:100%;
+      }
+
+
        .parallelogram {
         position: fixed;
       width: 20px;
@@ -31,9 +43,6 @@
       background: #808080;
     }
 
-
-
-
      body{
       margin: 3em;
      }
@@ -42,10 +51,11 @@
  </style>
 </head>
  <body>
-      
-     <div class="parallelogram"></div>
-     <div class="a-parallelogram"></div>
-     <div class="a-bar-parallelogram"></div>
+      <div class="letterA">
+         <div class="parallelogram"></div>
+         <div class="a-parallelogram"></div>
+         <div class="a-bar-parallelogram"></div>
+      </div> 
 
 </body>
 </html>
