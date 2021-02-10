@@ -5,19 +5,10 @@
   <title>  Nair Typeface Project </title>
   <style>
 
-       .letterA {
-        opacity:0%;
-        transition:opacity 0.5s;
-        
-    }
-
-      .letterA:hover {
-        opacity:100%;
-      }
-
+       
 
        .parallelogram {
-        position: fixed;
+      position: fixed;
       width: 20px;
       height: 150px;
       transform: skew(-20deg);
@@ -43,6 +34,61 @@
       background: #808080;
     }
 
+       .shadow1A {
+       position: relative;
+       bottom: 270px;
+       left: 25.5px;
+       width: 20px;
+       height: 10px;
+       transform: skew(-20deg);
+       background: #484848;
+    } 
+
+
+       .shadow2A {
+       position: relative;
+       bottom: 280px;
+       left: 48.5px;
+       width: 20px;
+       height: 10px;
+       transform: skew(20deg);
+       background: #484848;
+    } 
+     
+
+       .shadow3A {
+      position: relative;
+      bottom: 225px;
+      left: 112px;
+      width: 20px;
+      height: 10px;
+      transform: rotate(-130deg) skew(-40deg) ;
+      background: #484848;
+    }
+
+
+       .highlight1A {
+      position: relative;
+      bottom:285px;
+      left:3px;
+      width: 5px;
+      height: 130px;
+      transform: skew(-20deg);
+      background: #B0B0B0;
+    }
+
+      
+      .highlight2A {
+      position: relative;
+      bottom: 386px;
+      left: 68px;
+      width: 5px;
+      height: 54px;
+      transform: rotate(-130deg) skew(-40deg) ;
+      background: #B0B0B0;
+    }
+
+
      body{
       margin: 3em;
      }
@@ -51,11 +97,20 @@
  </style>
 </head>
  <body>
+
       <div class="letterA">
          <div class="parallelogram"></div>
          <div class="a-parallelogram"></div>
          <div class="a-bar-parallelogram"></div>
       </div> 
+
+      <div class="LetterAshadows&highlights">
+         <div class="shadow1A"></div>
+         <div class="shadow2A"></div>
+         <div class="shadow3A"></div>
+         <div class="highlight1A"></div>
+         <div class="highlight2A"></div>
+      </div>
 
 </body>
 </html>
