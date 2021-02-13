@@ -7,20 +7,11 @@
 
          
 
-       .LetterAshadows-highlights {
-        opacity:0%;
-        transition:opacity 0.5s;
-       }
-
-       .LetterAshadows-highlights:hover {
-        opacity: 100%
-       }
+      
 
 
 
        .parallelogram {
-      position: relative;
-      bottom: -150px; 
       width: 20px;
       height: 150px;
       transform: skew(-20deg);
@@ -28,8 +19,9 @@
     } 
 
        .a-parallelogram {
-      position: relative;
-      left:74px;
+      /*position: absolute;*/
+      left: 74px;
+      top: 0;
       width: 20px;
       height: 150px;
       transform: skew(20deg);
@@ -37,8 +29,7 @@
     }
 
        .a-bar-parallelogram {
-      position: relative;
-      bottom: 140px;
+      bottom: 10px;
       left: 40px;
       width: 20px;
       height: 120px;
@@ -47,56 +38,41 @@
     }
 
        .shadow1A {
-       position: relative;
-       bottom: 270px;
-       left: 25.5px;
        width: 20px;
        height: 10px;
-       transform: skew(-20deg);
        background: #484848;
     } 
 
 
        .shadow2A {
-       position: relative;
-       bottom: 280px;
-       left: 48.5px;
+       bottom: 0px;
        width: 20px;
        height: 10px;
-       transform: skew(20deg);
        background: #484848;
     } 
      
 
        .shadow3A {
-      position: relative;
-      bottom: 225px;
-      left: 112px;
       width: 20px;
       height: 10px;
-      transform: rotate(-130deg) skew(-40deg) ;
       background: #484848;
     }
 
 
        .highlight1A {
-      position: relative;
-      bottom:285px;
+      bottom: 5px;
       left:3px;
       width: 5px;
       height: 130px;
-      transform: skew(-20deg);
       background: #B0B0B0;
     }
 
       
       .highlight2A {
-      position: relative;
-      bottom: 386px;
-      left: 68px;
+      bottom: 20px;
+      left: 5px;
       width: 5px;
       height: 54px;
-      transform: rotate(-130deg) skew(-40deg) ;
       background: #B0B0B0;
     }
 
@@ -111,29 +87,69 @@
       background: #808080;
     } 
 
+    .letter{
+      width: 130px;
+      height: 150px;
+      position: relative;
+      margin: 30px;
+    }
+
+    .letter:hover .highlight{
+       opacity: 1;
+       transition:opacity 0.5s;
+    }
+
+    .highlight{
+       opacity:0;
+    }
+
      body{
       margin: 10em;
      }
 
+     .row{
+      display: flex;
+     }
+
+     .letter div{
+      position: absolute;
+     }
 
  </style>
 </head>
  <body>
-       
-      <div class="letterA">
-         <div class="parallelogram"></div>
-         <div class="a-parallelogram"></div>
-         <div class="a-bar-parallelogram"></div>
-     </div>
+    
+    <div class="row">   
+      
+      <div class="letterA letter">
+           <div class="parallelogram">
+                 <div class="shadow1A highlight"></div>
+                 <div class="highlight1A highlight"></div>
+           </div><!-- end of third stroke-->
+         
+         
+           <div class="a-parallelogram">
+                 <div class="shadow3A highlight"></div>
+           </div>  <!-- end of second stroke-->
+           
+          
+           <div class="a-bar-parallelogram">
+                <div class="shadow2A highlight"></div>
+                <div class="highlight2A highlight"></div>
+           </div> <!-- end of first stroke--> 
+     
 
-      <div class="LetterAshadows-highlights">
-         <div class="shadow1A"></div>
-         <div class="shadow2A"></div>
-         <div class="shadow3A"></div>
-         <div class="highlight1A"></div>
-         <div class="highlight2A"></div>
+      </div>  <!-- end of Letter A -->
+
+
+
+      <div class="letterB letter">
+         <div class="b1-parallelogram">
+             
+         </div>
       </div>
 
-       <div class="b1-parallelogram"></div>
+
+    </div> <!-- end row  -->
  </body>
 </html>
