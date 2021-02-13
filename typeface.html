@@ -5,11 +5,6 @@
   <title>  Nair Typeface Project </title>
   <style>
 
-         
-
-      
-
-
 
        .parallelogram {
       width: 20px;
@@ -19,7 +14,6 @@
     } 
 
        .a-parallelogram {
-      /*position: absolute;*/
       left: 74px;
       top: 0;
       width: 20px;
@@ -61,7 +55,7 @@
 
        .highlight1A {
       bottom: 5px;
-      left:3px;
+      left:5px;
       width: 5px;
       height: 130px;
       background: #B0B0B0;
@@ -77,22 +71,105 @@
     }
 
 
-
-
-       .b1-parallelogram {
-      position: relative;
+      .b1-parallelogram {
       width: 20px;
       height: 150px;
       transform: rotate(20deg) skew(20deg) ;
       background: #808080;
     } 
 
-    .letter{
+      .b2-parallelogram {
+       width: 10px;
+       height: 100px;
+       transform: rotate(130deg) skew(20deg);
+       background: #808080;
+       left:30px;
+       bottom: 80px;
+      }
+
+      .b3-parallelogram {
+       width: 10px;
+       height: 90px;
+       transform: rotate(-100deg) skew(-160deg);
+       background: #808080;
+       left:40px;
+       bottom:57px;
+      } 
+
+       .b4-parallelogram {
+       width: 10px;
+       height: 90px;
+       transform: rotate(130deg) skew(20deg);
+       background: #808080;
+       left:45px;
+       top: 39px;
+       }
+
+       .b5-parallelogram {
+       width: 10px;
+       height: 115px;
+       transform: rotate(-100deg) skew(-160deg);
+       background: #808080;
+       left:35px;
+       top:57px;
+       }
+
+       .shadow1B {
+       width: 10px;
+       height: 5px;
+       background: #484848;
+       }
+
+       .shadow2B {
+       width: 10px;
+       height: 5px;
+       bottom: 0px;
+       background: #484848;
+       }
+
+       .shadow3B {
+       width: 10px;
+       height: 5px;
+       background: #484848;
+       } 
+
+       .shadow4B {
+       width: 10px;
+       height: 5px;
+       bottom: 0px;
+       background: #484848;
+       }
+
+       .highlight2B {
+       bottom: 10px;
+       left:3px;
+       width: 2.5px;
+       height: 60px;
+       background: #B0B0B0;
+       }
+
+       .highlight3B {
+       bottom: 10px;
+       left:3px;
+       width: 2.5px;
+       height: 60px;
+       background: #B0B0B0;
+       }
+
+
+       .c1-parallelogram {
+      width: 20px;
+      height: 150px;
+      transform: skew(-20deg);
+      background: #808080;
+       }
+
+      .letter{
       width: 130px;
       height: 150px;
       position: relative;
       margin: 30px;
-    }
+      }
 
     .letter:hover .highlight{
        opacity: 1;
@@ -113,43 +190,66 @@
 
      .letter div{
       position: absolute;
-     }
+      }
 
  </style>
 </head>
  <body>
     
-    <div class="row">   
-      
-      <div class="letterA letter">
+    <div class="row">  
+
+
+      <div class="letterA letter"> <!-- start of Letter A -->
            <div class="parallelogram">
                  <div class="shadow1A highlight"></div>
                  <div class="highlight1A highlight"></div>
-           </div><!-- end of third stroke-->
-         
-         
-           <div class="a-parallelogram">
-                 <div class="shadow3A highlight"></div>
-           </div>  <!-- end of second stroke-->
+           </div><!-- end of first stroke-->
            
           
            <div class="a-bar-parallelogram">
                 <div class="shadow2A highlight"></div>
                 <div class="highlight2A highlight"></div>
-           </div> <!-- end of first stroke--> 
-     
+           </div> <!-- end of third stroke--> 
+     </div>  <!-- end of Letter A -->
 
-      </div>  <!-- end of Letter A -->
+     <div class="letterB letter"> <!-- start of LetterB -->
+           <div class="b4-parallelogram">
+                <div class="shadow3B highlight"></div>
+           </div> <!-- end of fouth stroke-->
+
+           <div class="b5-parallelogram">
+                 <div class="shadow2B highlight"></div> 
+                 <div class="highlight3B highlight"></div>
+           </div> <!-- end of fifth stroke-->
+          
+           <div class="b2-parallelogram">
+                <div class="shadow1B highlight"></div>
+           </div><!-- end of second stroke-->
+           
+           <div class="b3-parallelogram">
+                <div class="shadow2B highlight"></div>
+                <div class="highlight2B highlight"></div>
+           </div> <!-- end of third stroke-->
+
+           <div class="b1-parallelogram">
+                 <div class="highlight1A highlight">
+           </div> <!-- end of first stroke-->  
+     </div>  <!-- end of Letter B -->
+
+
+     <div class="letterC letter">  <!-- start of Letter C -->
+          <div class="c1-parallelogram"></div>
+    </div>   <!-- end of Letter C --> 
 
 
 
-      <div class="letterB letter">
-         <div class="b1-parallelogram">
-             
-         </div>
-      </div>
+      
+        
 
+    
+ 
 
+    
     </div> <!-- end row  -->
  </body>
 </html>
