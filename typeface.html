@@ -337,12 +337,20 @@
       background: #B0B0B0;
       }
 
+      .g1-parallelogram {
+      width: 20px;
+      height:60px;
+      background: #808080;
+      transform: rotate(20deg) skew(20deg) ;
+      bottom:0px;
+      right: 43px;
+      }
 
       .letter {
       width: 130px;
       height: 150px;
       position: relative;
-      margin: 30px;
+      margin: 40px;
       }
 
     .letter:hover .highlight{
@@ -362,6 +370,10 @@
       display:flex;
      }
 
+     .row2 {
+      display: flex;
+     }
+
      .letter div{
       position: absolute;
       } 
@@ -370,7 +382,7 @@
 </head>
  <body>
     
-    <div class="row1">  
+ <div class="row1">  <!-- start of row 1 -->
 
       
 
@@ -496,9 +508,31 @@
 
     </div> <!-- end of Letter F -->
         
+</div> <!-- end row 1 -->
 
-   </div> <!-- end row  -->
+<div class="row2"><!-- startr of row 2 -->
+     
 
+     <div class="letterG letter">  <!-- start of Letter G -->
+          
+
+           <div class="g1-parallelogram">
+                <div class="shadow1D highlight"></div>
+           </div>
+        
+          <div class="c1-parallelogram">
+                <div class="highlight1C highlight"></div>
+                <div class="shadow1C highlight"></div>
+          </div>
+          
+          <div class="c2-parallelogram">   
+               <div class="highlight2C highlight"></div>
+               <div class="shadow2C highlight"></div>
+          </div>
+
+    </div>   <!-- end of Letter G --> 
+  
+</div><!-- end row 2 -->
    
  </body>
 </html>
