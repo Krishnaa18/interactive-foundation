@@ -459,6 +459,91 @@
       background: #B0B0B0;
       }
 
+      .o1-parallelogram {
+      width: 20px;
+      height: 200px;
+      transform: skew(-35deg) rotate(0deg);
+      background: #808080;
+      left: 10px;
+      } 
+
+      .o2-parallelogram {
+      width: 20px;
+      height: 200px;
+      transform: skew(35deg) rotate(0deg);
+      background: #808080;
+      left: 10px;
+       bottom: 65px;
+      }
+
+      .o3-parallelogram {
+      width: 20px;
+      height: 200px;
+      transform: skew(-35deg) rotate(0deg);
+      background: #808080;
+      left: 87px;
+      top: -265px
+      }
+
+      .o4-parallelogram {
+      width: 20px;
+      height: 200px;
+      transform: skew(35deg) rotate(0deg);
+      background: #808080;
+      left: 87px;
+      bottom: 600px;
+
+      }
+
+      .Oshadow1 {
+       height: 10px;
+       background: #484848;
+       top: 0px;
+      }
+      .Oshadow2 {
+       height: 10px;
+       background: #484848;
+       bottom: -180px;
+      }
+
+      .Ohighlight {
+      bottom: 3px;
+      left:6px;
+      width: 4px;
+      height: 165px;
+      background: #B0B0B0;
+      }
+
+      .O2highlight {
+      bottom: -25px;
+      left:6px;
+      width: 4px;
+      height: 135px;
+      background: #B0B0B0; 
+      }
+
+      .O3highlight {
+      bottom: 2px;
+      left:6px;
+      width: 4px;
+      height: 120px;
+      background: #B0B0B0;
+      }
+
+      .O4highlight {
+      bottom: -35px;
+      left:6px;
+      width: 4px;
+      height: 100px;
+      background: #B0B0B0; 
+      }
+
+      .heading {
+       width: 150px;
+       height: 335px;
+       margin: 0 auto;
+      }
+
       .letter {
       width: 130px;
       height: 150px;
@@ -475,12 +560,11 @@
        opacity:0;
     }
 
-     body{
-      margin: 10em;
-     }
 
      .row1{
       display:flex;
+      margin: 0 auto; 
+      width: 1260px; 
      }
 
      .row2 {
@@ -489,17 +573,71 @@
       margin: 0 auto;
      }
 
+     .linebreak {
+      height: 80px; 
+     }
+
+
+     .heading div {
+      position: relative;
+     }
+
 
      .letter div{
       position: absolute;
       } 
+
+      body { 
+       margin: 10em;
+       background: url( img/script.jpg) repeat fixed center; 
+      }
+   
+      h1 {
+       color: #484848 ;
+       width: 150px;
+       height: 335px;
+       font-family: Herculanum;
+       font-size: 35px;
+      }
+
+
     
 
 
  </style>
 </head>
  <body>
-  
+
+ <div class="heading"> <!-- start of heading border -->
+
+      <div class="o1-parallelogram">
+           <div class="Oshadow1"></div>
+           <div class="Oshadow2"></div>
+           <div class="O4highlight"></div>   
+      </div>
+      <div class="o2-parallelogram">
+           <div class="Oshadow1"></div>
+           <div class="Oshadow2"></div>
+           <div class="O3highlight"></div>
+      </div>
+      <div class="o3-parallelogram">
+          <div class="Oshadow1"></div>
+          <div class="Oshadow2"></div>
+          <div class="O2highlight"></div>
+      </div>
+      <div class="o4-parallelogram">
+           <div class="Oshadow1"></div>
+           <div class="Oshadow2"></div>
+           <div class="Ohighlight"></div>
+      </div>
+       <div style="position: absolute; bottom: 230px;">
+       <h1> SHEaTH </h1>
+      </div>
+ </div> <!-- end of heading border -->
+
+ <div class="linebreak"></div>
+
+  <!-- <audio controls src="sword.mp3"></audio> -->
 
  <div class="row1">  <!-- start of row 1 -->
 
