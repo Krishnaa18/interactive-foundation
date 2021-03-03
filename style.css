@@ -13,15 +13,25 @@ main{
 
 h1,h2,h3 {
 	font-family: 'Volkhov', serif;
+	text-align: center;
+
 }
 
 h1{
 	font-size: 5rem;
+	margin-bottom:0em;
+
 }
 
 
 h2 {
-	font-size: 4rem;
+	font-size: 3rem;
+	margin-top: 0em;
+}
+
+h3{
+	font-size: 1em;
+	margin: 3em;
 }
 
 .color{
