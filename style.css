@@ -34,6 +34,7 @@ h3{
 	font-family: 'Poppins', sans-serif;
 }
 
+
 .row1{
 	display:grid;
 	grid-template-columns:1fr 1fr;
@@ -48,6 +49,76 @@ h3{
 }
 
 .row3 {
+	display:grid;
+	grid-template-columns:1fr 1fr;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+}
+
+.row4{
+	display:grid;
+	grid-template-columns:1fr 1fr;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+}
+
+.row5{
+	display:grid;
+	grid-template-columns:1fr 1fr;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+}
+
+.row6{
+	display:grid;
+	grid-template-columns:1fr 1fr;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+}
+
+.row7{
+	display:grid;
+	grid-template-columns:1fr 1fr;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+}
+
+.row8 {
+	display:grid;
+	grid-template-columns:1fr 1fr;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+}
+
+.row9{
+	display:grid;
+	grid-template-columns:1fr 1fr;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+}
+
+.row10{
+	display:grid;
+	grid-template-columns:1fr 1fr;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+}
+
+.row11{
+	display:grid;
+	grid-template-columns:1fr 1fr;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+}
+
+.row12{
+	display:grid;
+	grid-template-columns:1fr 1fr;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+}
+
+.row13{
 	display:grid;
 	grid-template-columns:1fr 1fr;
 	text-align: center;
