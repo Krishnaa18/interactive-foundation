@@ -31,8 +31,11 @@ h2 {
 }
 
 h3{
-	font-size: 1em;
-	margin: 3em;
+	font-size: 1.20em;
+	margin-top: : 3em;
+    margin-bottom: 3em;
+    margin-right: 2em;
+    margin-left: 2em;
 	font-family: 'Poppins', sans-serif;
 }
 
