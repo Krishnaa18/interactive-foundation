@@ -84,6 +84,11 @@ h3{
 	background-color: #FF8C00;
 	border-bottom-right-radius:20px; 
 	border-bottom-left-radius: 20px;
+    transition: 0.5s;
+}
+
+.row5:hover {
+ background: linear-gradient( to right,orange, white, green);
 }
 
 .row6{
@@ -127,6 +132,12 @@ h3{
 	text-align: center;
 	font-family: 'Poppins', sans-serif;
 	background-color: #FF8C00;
+    transition: 0.5s;
+
+}
+
+.row10:hover {
+ background: linear-gradient( to right,#FF0000, #FF7F00, #FFFF00,#00FF00,#0000FF,#2E2B5F,#8B00FF);
 }
 
 .row11{
@@ -137,6 +148,11 @@ h3{
 	background-color: #FF8C00;
 	border-bottom-right-radius:20px; 
 	border-bottom-left-radius: 20px;
+    transition: 0.5s;
+}
+
+.row11:hover {
+    background: linear-gradient( to right,#FF0000, #FF7F00, #FFFF00,#00FF00,#0000FF,#2E2B5F,#8B00FF);
 }
 
 .row12{
@@ -177,6 +193,11 @@ h3{
 	background-color: #FF8C00;
 	border-top-right-radius:20px; 
 	border-top-left-radius: 20px;
+    transition: 0.5s;
+}
+
+.row15:hover {
+    background: linear-gradient( to right,orange, white, green);
 }
 
 .row16{
@@ -203,7 +224,12 @@ h3{
 	background-color: #FF8C00;
 	border-bottom-right-radius:20px; 
 	border-bottom-left-radius: 20px;
+    transition: 0.5s;
 }
+
+.row18:hover { 
+  background: linear-gradient( to right,#2C3A96, #5260AB, #B2DAF4,#DFF0F6,#EFD4EA,#BE529E);
+ }
 
 .row19{
 	display:grid;
@@ -221,8 +247,13 @@ h3{
 	text-align: center;
 	font-family: 'Poppins', sans-serif;
 	background-color: #FF8C00;
+    transition: 0.5s; 
 }
 
+.row20:hover {
+    background: linear-gradient( to right, #ffd400,#f4c430,#eedd44,#ffea61);
+
+}
 .row21{
 	display:grid;
 	grid-template-columns:1fr 1fr;
@@ -265,6 +296,11 @@ h3{
 	text-align: center;
 	font-family: 'Poppins', sans-serif;
 	background-color:#FF8C00;
+    transition: 0.5s; 
+}
+
+.row25:hover{
+  background: linear-gradient( to right, grey,orange,white,red, #4169e1,yellow, green,#3a6066, purple)
 }
 
 .row26{
@@ -301,6 +337,11 @@ h3{
 	text-align: center;
 	font-family: 'Poppins', sans-serif;
 	background-color:#FF8C00;
+    transition: 1.5s;
+}
+
+.row29:hover {
+ background-image: url(img/fireworks.png)
 }
 
 .row30{
@@ -344,8 +385,12 @@ h3{
 	font-family: 'Poppins', sans-serif;
 	background-color:#FF8C00;
 	border-radius: 20px;
+    transition: 0.5s;
 }
 
+.row34:hover {
+ background: linear-gradient( to right, red,white,green);
+}
 
 html,body{
         background-color: black;
