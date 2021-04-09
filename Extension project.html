@@ -10,13 +10,23 @@
   <h1>Dog Breeds</h1>
   <h3>Learn everything you need to know about your furry friends!</h3>
 
-  <div class="row1 row">
-    <div class="rectangle1"></div>
-    <div class="rectangle1"></div>
-    <div class="rectangle1"></div>
-    <div class="rectangle1"></div>
-    <div class="rectangle1"></div>
-  </div>
+  <div class="wrapper">
+  <div class="box a">A</div>
+  <div class="box b">B</div>
+  <div class="box c">C</div>
+  <div class="box d">D</div>
+  <div class="box e">E</div>
+  <div class="box f">F</div>
+  <div class="box g">G</div>
+  <div class="box h">H</div>
+  <div class="box i">I</div>
+  <div class="box j">J</div>
+  <div class="box k">K</div>
+  <div class="box l">L</div>
+  <div class="box m">M</div>
+  <div class="box n">N</div>
+  <div class="box o">O</div>
+</div>
 
   <style>
  body {
@@ -28,15 +38,21 @@
 text-align: center;
  }  
 
-.rectangle1 {
-width: 200px;
-margin:30px;
-height :320px;
-background: red;
+.wrapper {
+  display: grid;
+  grid-template-columns: 300px 300px  300px 300px 300px ;
+  grid-gap: 10px;
+  background-color: #fff;
+  color: #444;
 }
 
-.row {
-grid-column: 1fr 1fr 1fr 1fr 1fr;
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 150%;
+  height: 350px;
 }
 
 
