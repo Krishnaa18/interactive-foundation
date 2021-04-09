@@ -10,14 +10,34 @@
   <h1>Dog Breeds</h1>
   <h3>Learn everything you need to know about your furry friends!</h3>
 
+  <div class="row1 row">
+    <div class="rectangle1"></div>
+    <div class="rectangle1"></div>
+    <div class="rectangle1"></div>
+    <div class="rectangle1"></div>
+    <div class="rectangle1"></div>
+  </div>
+
   <style>
  body {
   margin: 5em;
+
  }  
 
- h1 h3 {
+ h1, h3 {
 text-align: center;
  }  
+
+.rectangle1 {
+width: 200px;
+margin:30px;
+height :320px;
+background: red;
+}
+
+.row {
+grid-column: 1fr 1fr 1fr 1fr 1fr;
+}
 
 
   </style>
