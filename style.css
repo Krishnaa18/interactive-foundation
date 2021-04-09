@@ -86,6 +86,7 @@ h3{
 	border-radius: 20px;
     transition: 0.5s;
     height: 83px;
+    overflow: hidden;
 }
 
 .row5:hover{
@@ -150,6 +151,7 @@ h3{
 	border-radius: 20px;
     transition: 0.5s;
     height: 83px;
+     overflow: hidden;
 }
 
 .row11:hover {
@@ -198,6 +200,7 @@ h3{
 	border-radius: 20px;
     transition: 0.5s;
     height: 83px;
+     overflow: hidden;
 }
 
 .row15:hover {
@@ -233,6 +236,7 @@ h3{
 	border-radius: 20px;
     transition: 0.5s;
     height: 83px;
+     overflow: hidden;
 }
 
 .row18:hover { 
@@ -268,6 +272,7 @@ h3{
     color:black;
     height: 270px;
     grid-template-columns: 1fr;
+     overflow: hidden;
 
 }
 
@@ -316,6 +321,7 @@ h3{
     transition: 0.5s; 
     border-radius: 20px;
     height: 83px;
+     overflow: hidden;
 }
 
 .row25:hover {
@@ -370,6 +376,7 @@ h3{
  height: 350px;
  grid-template-columns: 1fr;
  color: white;
+ overflow: hidden;
 }
 
  div  span  {
