@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <title> Extention Project</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <!-- this is where my meta-info lives, but won’t show up on the page itself-->
 </head>
 <body>
@@ -11,49 +14,99 @@
   <h3>Learn everything you need to know about your furry friends!</h3>
 
   <div class="wrapper">
-  <div class="box a">Australian Shepherd</div>
-  <div class="box b">B</div>
-  <div class="box c">C</div>
-  <div class="box d">D</div>
-  <div class="box e">E</div>
-  <div class="box f">F</div>
-  <div class="box g">G</div>
-  <div class="box h">H</div>
-  <div class="box i">I</div>
-  <div class="box j">J</div>
-  <div class="box k">K</div>
-  <div class="box l">L</div>
-  <div class="box m">M</div>
-  <div class="box n">N</div>
-  <div class="box o">O</div>
+  <div class="box a">Australian Shepherd
+       <img class="a1" src="img/AUS.jpg">
+       <h3>About</h3>
+       <p>The Australian Shepherd originated from the United States around 1840. The Australian Shepherd was originally developed to herd livestock for ranchers and farmers in the western U.S., and some modern-day Aussies still hold that job.Today, the Australian Shepherd remains the same eye-catching, energetic, clever dog that proved so useful to ranchers and farmers in the old West.</p>
+
+       <h3>Characteristics</h3>
+       <P> Australian Shepherds are by nature loyal to their family but standoffish with strangers. They need early socialization — exposure to many different people, sights, sounds, and experiences — when they're young. They are a great dog for a family or young owners as they need exercise to keep them happy. Australian Shepherd stands 20 to 23 inches tall at the shoulder for males, 18 to 21 inches for females. Males weigh between 50 and 65 pounds, females 40 to 55 pounds.</P>
+
+       <h3>Health</h3>
+       <P>Aussies are generally healthy, but like all breeds, they're prone to certain health conditions, such as: Hip Dysplasia, Elbow Dysplasia because they are a relatively large breed. </P>
+
+       <h3>Facts</h3>
+       <ul>
+        <li>Australian Shepherds need roughly 30 to 60 minutes of exercise a day, preferably with high-energy activities like playing Frisbee. </li>
+        <li>Australian Shepherds can be very destructive and bark for long periods if they're not getting the exercise and mental stimulation they need.</li>
+        <li>Australian Shepherds are average shedders, and their coat needs regular maintenance, including weekly brushing to keep it clean and prevent matting, and possibly trimming to keep it looking tidy.</li>
+       </ul>
+
+  </div>
+  <div class="b box ">B</div>
+  <div class="c box ">C</div>
+  <div class="d box ">D</div>
+  <div class="e box ">E</div>
+  <div class="f box ">F</div>
+  <div class="g box ">G</div>
+  <div class="h box ">H</div>
+  <div class="i box ">I</div>
+  <div class="j box ">J</div>
+  <div class="k box ">K</div>
+  <div class="l box ">L</div>
+  <div class="m box ">M</div>
+  <div class="n box ">N</div>
+  <div class="o box ">O</div>
 </div>
 
   <style>
  body {
   margin: 5em;
-
+  font-family: 'Poppins', sans-serif;
  }  
+
+ img  {
+  border-radius: 20px;
+  vertical-align: middle;
+  height:250px;
+  width: 250px;
+ }
+
+.a1:hover .box {
+ display: none;
+}
+
+ul{
+  font-size: 10px;
+}
+
+p {
+  font-size: 10pt;
+}
 
  h1, h3 {
 text-align: center;
  }  
 
+ h3{
+  font-size: 14pt;
+ }
+
 .wrapper {
   display: grid;
-  grid-template-columns: 300px 300px  300px 300px 300px ;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
   grid-gap: 10px;
   background-color: #fff;
   color: #444;
 }
 
 .box {
-  background-color: #444;
-  color: #fff;
+  background-color: #ebcc90;
+  color: black;
   border-radius: 20px;
   padding: 10px;
   font-size: 150%;
   height: 350px;
+  text-align:center;
+  overflow: hidden;
+  transition: 0.5s;
 }
+
+.box:hover {
+  width: 550px;
+  height: 700px;
+}
+
 
 
   </style>
