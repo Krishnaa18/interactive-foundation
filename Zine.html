@@ -6,29 +6,26 @@
   
 </head>
 <body>
-<body style="background-color:grey;">
-  <center><img class="i1" src="img/I1.PNG"></center>
-  <center><img class="i2" src="img/I2.PNG"></center>
-  <center><img class="i3" src="img/I3.PNG"></center>
-  <center><img class="i4" src="img/I4.PNG"></center>
+  <div class="mydiv"></div>
+ 
   <style>
-
-.i1{
-padding:1em; 
+html, body {
+  height: 100%;
 }
 
-.i2{
-padding:1em; 
+.mydiv {
+  width:200%;
+  height:200%;
+  animation: myanimation 10s infinite;
 }
 
-.i3{
-padding:1em; 
+@keyframes myanimation {
+  0% {background-color: black;}
+  25%{background-color:#525252;}
+  50%{background-color:#414141;}
+  75%{background-color:#313131;}
+  100% {background-color:#810000;}
 }
-
-.i4{
-padding:1em; 
-}
-
 
   </style>
 </section> 
