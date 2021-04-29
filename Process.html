@@ -16,7 +16,11 @@
 <body>
 
 	<h1>Process</h1>
-  <div class="mydiv"> </div>
+  <div class="mydiv"> 
+            
+           <button id="darkmode"></button>
+        
+
            <div  class="directory ">=
            <div class="D1" style="margin: 30px;">
             <div class="S1"  style="margin: 30px;"><a style="text-decoration: none" href="Zine.html">HOMEPAGE</a></div>
@@ -24,9 +28,8 @@
            <div class="S2"  style="margin: 30px;"><a style="text-decoration: none" href="Process.html">PROCESS</a></div>
            <div class="S2" style="margin: 30px; "><a style="text-decoration: none" href="DP.html">DEATH PENALTY</a></div>
            <div class="S2" style="margin: 30px;"><a style="text-decoration: none" href="LI.html">LIFE IMPRISONMENT</a></div>
-          
-      </div>
-      </div>
+          </div>
+ </div>
       
   <div class="box">
   <div class="box1">
@@ -69,9 +72,10 @@
   </div>
 
   </div>
+
+
   
- 
-  <style>
+  <style>/*<!--  CSS starts -->*/
 body {
 margin: 0;
 padding: 0;
@@ -218,8 +222,55 @@ margin:50px;
   margin-right: auto;
 }
 
+button{
+  background-color : #A9A9A9;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 50px;
+  position: fixed;
+  top: 20px;
+  left:30px;
+}
 
-  </style>
+button:hover{
+  background-color: #515151; 
+}
+
+body.darkmode {
+ background-color:#515151
+ color:white; 
+}
+
+body.darkmode button {
+  color: white;
+}
+
+
+  </style>  <!--  CSS ends -->
 </section> 
+
+<!-- javascript starts -->
+ 
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous" type="text/javascript"> 
+
+
+console.log('dark mode');
+
+
+$(document).ready(function(){
+
+
+  //------------------------------------
+  // adds a a darkmode class to the body
+  //------------------------------------
+  $("#darkmode").click(function(){
+    $('body').toggleClass('darkmode');
+  });
+
+});
+
+  
+</script> <!-- javascript ends -->
 </body>
 </html>
