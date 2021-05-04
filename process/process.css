@@ -1,35 +1,4 @@
-body {
-  margin: 0;
-  padding: 0;
-  animation: bgcolor infinite 15s;
-}
 
-@keyframes bgcolor {
-  0%
-  {
-  	background: black ;
-  }
-  20%
-  {
-  	background:#636363 ;
-  }
-  40%
-  {
-  	background:#8C8C8C ;
-  }
-  60%
-  {
-  	background:#4D4848 ;
-  }
-  80%
-  {
-  	background:#420308 ;
-  }
-  100%
-  {
-  	background:#7A0510 ;
-  }
-}
 
 .directory {
   background-color : #A9A9A9;
@@ -88,9 +57,11 @@ body {
 
 h1 {
 font-family: 'Staatliches', cursive;
-font-size: 100pt;
+font-size: 70pt;
 text-align: center;
-padding: 200px;
+padding: 70px;
+margin-bottom: 0px;
+margin-top: 0px;
 }
 
 h2{

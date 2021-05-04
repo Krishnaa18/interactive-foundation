@@ -9,12 +9,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com"> 
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="process.css">
 
 </head>
 
 <body>
 
 	<h1>About</h1>
+
+  <button id="darkmode"></button>
+
+
   <div class="mydiv"> 
            <div  class="directory ">=
            <div class="D1" style="margin: 30px;">
@@ -43,7 +48,7 @@
   
  
   <style>
-body {
+/*body {
 margin: 0;
 padding: 0;
 animation: bgcolor infinite 15s;
@@ -154,7 +159,7 @@ p {
  font-family: 'Roboto Condensed', sans-serif;
  font-size: 18pt; 
 }
-
+*/
 
 .box1 {
 width: 350px;
@@ -170,7 +175,8 @@ text-align: left;
 .box2 {
 width: 350px;
 height: 370px;
-background-color: #A9A9A9;
+background-color: black;
+color: #A9A9A9;
 padding: 20px;
 overflow: scroll;
 margin:50px;
@@ -183,9 +189,50 @@ text-align: left;
 }
 
 
+  button{
+    background-color : #A9A9A9;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 50px;
+    position: fixed;
+    top: 20px;
+    left:30px;
+  }
+
+  button:hover{
+    background-color: #515151; 
+  }
+
+body{
+  background:#636363 ;
+}
 
 
   </style>
 </section> 
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" type="text/javascript"></script>
+<script type="text/javascript">
+
+console.log('hello!');
+
+
+$(document).ready(function(){
+
+
+  //------------------------------------
+  // adds a a darkmode class to the body
+  //------------------------------------
+  $("#darkmode").click(function(){
+    console.log('darkmode');
+    
+    $('body').toggleClass('darkmode');
+  });
+
+});
+
+  
+</script> <!-- javascript ends -->
 </body>
 </html>

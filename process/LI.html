@@ -11,12 +11,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com"> 
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="process.css">
+
 </head>
 
 <body>
 
 	<h1> Life Imprisonment</h1>
   <div class="mydiv"> 
+
+    <button id="darkmode"></button>
+
            <div  class="directory ">=
            <div class="D1" style="margin: 30px;">
             <div class="S1"  style="margin: 30px;"><a style="text-decoration: none" href="Zine.html">HOMEPAGE</a></div>
@@ -66,7 +71,7 @@
   
  
   <style>
-body {
+/*body {
 margin: 0;
 padding: 0;
 animation: bgcolor infinite 15s;
@@ -170,7 +175,7 @@ a:visited {
 
 a:hover {
 color:white;
-}
+}*/
 
 .box1 {
 width: 700px;
@@ -185,7 +190,8 @@ margin: 50px;
 .box2 {
 width: 700px;
 height: 600px;
-background-color: #A9A9A9;
+background-color: black;
+    color: #A9A9A9;
 padding: 20px;
 overflow: scroll;
 margin:50px;
@@ -208,11 +214,53 @@ p{
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+button{
+    background-color : #A9A9A9;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 50px;
+    position: fixed;
+    top: 20px;
+    left:30px;
+  }
 
+  button:hover{
+    background-color: #515151; 
+  }
+
+body{
+  background:#4D4848;
+}
 
 
 
   </style>
+
+  <!-- javascript starts -->
+ 
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" type="text/javascript"></script>
+<script type="text/javascript">
+
+console.log('hello!');
+
+
+$(document).ready(function(){
+
+
+  //------------------------------------
+  // adds a a darkmode class to the body
+  //------------------------------------
+  $("#darkmode").click(function(){
+    console.log('darkmode');
+    
+    $('body').toggleClass('darkmode');
+  });
+
+});
+
+  
+</script> <!-- javascript ends -->
 </section> 
 </body>
 </html>
