@@ -1,35 +1,61 @@
-* {margin: 0px; padding: 0px; box-sizing: border-box;}
-
-body {
-    font-family: arial, sans-serif;
+ body{
+  background: #e64231;
 }
 
-.donuts{
-    width: 25vw;
-    height: 25vw;
-    position: relative;
-
-    border: 1px solid blue;
+@keyframes walk{
+  0%{
+    left: 0;
+  }
+  
+  100%{
+    margin-left: -215px;
+    left: 100%;
+  }
 }
 
-.donut {
-    width: 80%;
-    height: 80%;
-
-    position: absolute;
-    top: 10%;
-    left: 10%;
-
-    border-radius: 80%;
-    background: radial-gradient(circle, rgba(255,0,0,1) 0%, rgba(255,0,0,0) 80%);    
-
+@keyframes eat{
+  50%{
+    border-bottom: 0 solid transparent;
+    border-top: 0 solid transparent;
+    right: -15px;
+    top: 90px;
+  }
 }
 
-.donut_hole {
-    width: 30%;
-    height: 30%;
-    margin: 35%;
+.background{
+  position: relative;
+}
 
-    border-radius: 80%;
-    background: radial-gradient(circle, rgba(0,0,255,1) 0%, rgba(0,0,255,0) 80%);    
+.pacman{
+  animation: walk 10s infinite;
+  
+  background: #fffc07;
+  border-radius: 100%;
+  height: 200px;
+  position: absolute;
+  width: 200px;
+}
+
+.pacman::before{
+  background: #000;
+  border-radius: 100%;
+  content: '';
+  height: 37px;
+  position: absolute;
+  right: 60px;
+  top: 30px;
+  width: 24px;
+}
+
+.mouth{
+  animation: eat 0.7s infinite;
+  
+  border-top: 80px solid transparent;
+  border-bottom: 80px solid transparent;
+  border-right:60px solid #e64231;
+  border-radius: 0 100% 100% 0;
+  position: absolute;
+  right: -1px;
+  top: 20px;
+  z-index: 3;
 }
