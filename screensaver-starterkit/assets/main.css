@@ -1,5 +1,5 @@
  body{
-  background: #e64231;
+  background: black;
 }
 
 @keyframes walk{
@@ -37,7 +37,7 @@
 }
 
 .pacman::before{
-  background: #000;
+  background: black;
   border-radius: 100%;
   content: '';
   height: 37px;
@@ -50,12 +50,12 @@
 .mouth{
   animation: eat 0.7s infinite;
   
-  border-top: 80px solid transparent;
-  border-bottom: 80px solid transparent;
-  border-right:60px solid #e64231;
+  border-top: 90px solid transparent;
+  border-bottom: 90px solid transparent;
+  border-right:80px solid black;
   border-radius: 0 100% 100% 0;
   position: absolute;
   right: -1px;
   top: 20px;
-  z-index: 3;
 }
+
