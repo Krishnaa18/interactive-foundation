@@ -4,9 +4,10 @@
 
 @keyframes walk{
   0%{
-    left: -250px;
+    left: -300px;
   }
-  
+
+
   100%{
     margin-right: 100;
     left: 100%;
@@ -27,7 +28,8 @@
 }
 
 .pacman{
-  animation: walk 10s infinite;
+  animation: walk 10s ;
+  animation-fill-mode: both;
   background: #fffc07;
   border-radius: 100%;
   height: 200px;
@@ -48,7 +50,6 @@
 
 .mouth{
   animation: eat 0.7s infinite;
-  
   border-top: 90px solid transparent;
   border-bottom: 90px solid transparent;
   border-right:90px solid black;
@@ -57,4 +58,111 @@
   right: -5px;
   top: 20px;
 }
+
+.pacman2{
+  animation: walk 10s ;
+  animation-direction: reverse;
+  animation-fill-mode: both;
+  animation-delay: 10s;
+  background: #fffc07;
+  border-radius: 100%;
+  height: 200px;
+  top: 250px;
+  position: absolute;
+  width: 200px;
+}
+
+.pacman2::before{
+  background: black;
+  border-radius: 100%;
+  content: '';
+  height: 30px;
+  position: absolute;
+  left: 60px;
+  top: 30px;
+  width: 30px;
+}
+
+.mouth2{
+  animation: eat 0.7s infinite;
+  border-top: 90px solid transparent;
+  border-bottom: 90px solid transparent;
+  border-left:90px solid black;
+  border-radius: 0 100% 100% 0;
+  position: absolute;
+  left: -5px;
+  top: 20px;
+}
+
+.pacman3{
+  animation: walk 10s ;
+  animation-delay: 20s;
+  animation-fill-mode: both;
+  background: #fffc07;
+  border-radius: 100%;
+  height: 200px;
+  top: 500px;
+  position: absolute;
+  width: 200px;
+}
+
+.pacman3::before{
+  background: black;
+  border-radius: 100%;
+  content: '';
+  height: 30px;
+  position: absolute;
+  right: 60px;
+  top: 30px;
+  width: 30px;
+}
+
+.mouth3{
+  animation: eat 0.7s infinite;
+  border-top: 90px solid transparent;
+  border-bottom: 90px solid transparent;
+  border-right:90px solid black;
+  border-radius: 0 100% 100% 0;
+  position: absolute;
+  right: -5px;
+  top: 20px;
+}
+
+.pacman4{
+  animation: walk 10s ;
+   animation-delay: 30s;
+  animation-direction: reverse;
+  animation-fill-mode: both;
+  background: #fffc07;
+  border-radius: 100%;
+  height: 200px;
+  top: 750px;
+  position: absolute;
+  width: 200px;
+}
+
+.pacman4::before{
+  background: black;
+  border-radius: 100%;
+  content: '';
+  height: 30px;
+  position: absolute;
+  left: 60px;
+  top: 30px;
+  width: 30px;
+}
+
+.mouth4{
+  animation: eat 0.7s infinite;
+  border-top: 90px solid transparent;
+  border-bottom: 90px solid transparent;
+  border-left:90px solid black;
+  border-radius: 0 100% 100% 0;
+  position: absolute;
+  left: -5px;
+  top: 20px;
+}
+
+
+
 
