@@ -1,266 +1,102 @@
- body{
-  background: black;
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-@keyframes walk{
-  0%{
-    left: -300px;
-  }
-
-
-  100%{
-    margin-right: 100;
-    left: 120%;
-  }
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #282828;
 }
 
-@keyframes eat{
-  50%{
-    border-bottom: 0 solid transparent;
-    border-top: 0 solid transparent;
-    right: -15px;
-    top: 90px;
-  }
+.clock {
+    display: flex;
+    width: 350px;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+ /* background: url(http://samuel-garcia.site/img/clock-sam.png);*/
+    background-size: cover;
+    border: 4px solid #191919;
+    border-radius: 50%;
+    box-shadow: -4px -4px 10px rgba(67, 67, 67, 0.5),
+        inset 4px 4px 10px rgba(0, 0, 0, 0.5),
+        inset -4px -4px 10px rgba(67, 67, 67, 0.3),
+        4px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+.clock:before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #747474;
+    border-radius: 50%;
+    z-index: 999;
 
-.background{
-  position: relative;
 }
 
-
-.pacman{
-  animation: walk 5s ;
-  animation-fill-mode: both;
-  background: #fffc07;
-  border-radius: 100%;
-  height: 200px;
-  position: absolute;
-  width: 200px;
-  animation-timing-function: linear; 
+.clock .hour,
+.clock .min,
+.clock .sec {
+    position: absolute;
 }
 
-.pacman::before{
-  background: black;
-  border-radius: 100%;
-  content: '';
-  height: 30px;
-  position: absolute;
-  right: 60px;
-  top: 30px;
-  width: 30px;
+.clock .hour, .hr {
+    width: 160px;
+    height: 160px;
 }
 
-.mouth{
-  animation: eat 0.7s infinite;
-  border-top: 90px solid transparent;
-  border-bottom: 90px solid transparent;
-  border-right:90px solid black;
-  border-radius: 0 100% 100% 0;
-  position: absolute;
-  right: -5px;
-  top: 20px;
+.clock .min, .mn {
+    width: 190px;
+    height: 190px;
 }
 
-.pacman2{
-  animation: walk 5s ;
-  animation-direction: reverse;
-  animation-fill-mode: both;
-  animation-delay: 7s;
-  background: #fffc07;
-  border-radius: 100%;
-  height: 200px;
-  top: 250px;
-  position: absolute;
-  width: 200px;
-  animation-timing-function: linear;
+.clock .sec, .sc {
+    width: 230px;
+    height: 230px;
 }
 
-.pacman2::before{
-  background: black;
-  border-radius: 100%;
-  content: '';
-  height: 30px;
-  position: absolute;
-  left: 60px;
-  top: 30px;
-  width: 30px;
+.hr, .mn, .sc {
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    position: absolute;
+    border-radius: 50%;
+    
 }
 
-.mouth2{
-  animation: eat 0.7s infinite;
-  border-top: 90px solid transparent;
-  border-bottom: 90px solid transparent;
-  border-left:90px solid black;
-  border-radius: 0 100% 100% 0;
-  position: absolute;
-  left: -5px;
-  top: 20px;
+.hr:before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 80px;
+    background: #ffb510;
+    z-index: 9;
+    border-radius: 6px 6px 0 0;
 }
 
-.pacman3{
-  animation: walk 5s ;
-  animation-delay: 12s;
-  animation-fill-mode: both;
-  background: #fffc07;
-  border-radius: 100%;
-  height: 200px;
-  top: 500px;
-  position: absolute;
-  width: 200px;
-  animation-timing-function: linear;
+.mn:before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 90px;
+    background: #8b8b8b;
+    z-index: 10;
+    border-radius: 6px 6px 0 0;
 }
 
-.pacman3::before{
-  background: black;
-  border-radius: 100%;
-  content: '';
-  height: 30px;
-  position: absolute;
-  right: 60px;
-  top: 30px;
-  width: 30px;
+.sc:before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height:150px;
+    background: #e5e5e5;
+    z-index: 11;
+    border-radius: 6px 6px 0 0;
 }
-
-.mouth3{
-  animation: eat 0.7s infinite;
-  border-top: 90px solid transparent;
-  border-bottom: 90px solid transparent;
-  border-right:90px solid black;
-  border-radius: 0 100% 100% 0;
-  position: absolute;
-  right: -5px;
-  top: 20px;
-}
-
-.pacman4{
-  animation: walk 5s ;
-   animation-delay: 19s;
-  animation-direction: reverse;
-  animation-fill-mode: both;
-  background: #fffc07;
-  border-radius: 100%;
-  height: 200px;
-  top: 750px;
-  position: absolute;
-  width: 200px;
-  animation-timing-function: linear;
-}
-
-.pacman4::before{
-  background: black;
-  border-radius: 100%;
-  content: '';
-  height: 30px;
-  position: absolute;
-  left: 60px;
-  top: 30px;
-  width: 30px;
-}
-
-.mouth4{
-  animation: eat 0.7s infinite;
-  border-top: 90px solid transparent;
-  border-bottom: 90px solid transparent;
-  border-left:90px solid black;
-  border-radius: 0 100% 100% 0;
-  position: absolute;
-  left: -5px;
-  top: 20px;
-}
-
-
-.ghost {
-  width: 100px;
-  height: 120px;
-  background: #f00;
-  border-radius: 50px 50px 5px 5px;
-  position: absolute;
-  margin: 20px;
-  float: right;
-}
-.ghost-red {
-  animation: walk 5s;
-  animation-delay: 1s;
-  animation-timing-function: linear;
-  animation-fill-mode: both;
-  background: #f00;
-  top: 40px; 
-  }
-
-  .eye {
-  background: #fff;
-  width: 35px;
-  height: 35px;
-  position: absolute;
-  top: 27px;
-  right: 2px;
-  border-radius: 50%;
-}
-.eye-right {
-  right: 42px;
-}
-.eye:before {
-  content: "";
-  background: #00f;
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  top: 9px;
-  right: 1px;
-  border-radius: 50%;
-}
-
-.foot {
-  width: 25px;
-  height: 25px;
-  border-radius: 5px;
-  background: black;
-  bottom: -15px;
-  left: 5px;
-  position: absolute;
-  transform: rotate(45deg)
-}
-.foot-center {
-  left: 37px;
-}
-.foot-right {
-  left: 69px;
-}
-
-.ghost-pink {
-  background: #f00;
-  animation: walk 5s;
-  animation-delay: 6s;
-  animation-timing-function: linear;
-  animation-fill-mode: both;
-  animation-direction: reverse;
-  top: 270px;
-}
-
-.ghost-pink .eye:before {
-  left: 18px;
-}
-
-.ghost-red3 {
-  animation: walk 5s;
-  animation-delay: 13s;
-  animation-timing-function: linear;
-  animation-fill-mode: both;
-  background: #f00;
-  top: 520px; 
-  }
-
-
-.ghost-pink4 {
-  background: #f00;
-  animation: walk 5s;
-  animation-delay: 18s;
-  animation-timing-function: linear;
-  animation-fill-mode: both;
-  animation-direction: reverse;
-  top: 770px;
-}
-
 
 
