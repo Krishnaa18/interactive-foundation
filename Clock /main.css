@@ -1,0 +1,266 @@
+ body{
+  background: black;
+}
+
+@keyframes walk{
+  0%{
+    left: -300px;
+  }
+
+
+  100%{
+    margin-right: 100;
+    left: 120%;
+  }
+}
+
+@keyframes eat{
+  50%{
+    border-bottom: 0 solid transparent;
+    border-top: 0 solid transparent;
+    right: -15px;
+    top: 90px;
+  }
+}
+
+
+.background{
+  position: relative;
+}
+
+
+.pacman{
+  animation: walk 5s ;
+  animation-fill-mode: both;
+  background: #fffc07;
+  border-radius: 100%;
+  height: 200px;
+  position: absolute;
+  width: 200px;
+  animation-timing-function: linear; 
+}
+
+.pacman::before{
+  background: black;
+  border-radius: 100%;
+  content: '';
+  height: 30px;
+  position: absolute;
+  right: 60px;
+  top: 30px;
+  width: 30px;
+}
+
+.mouth{
+  animation: eat 0.7s infinite;
+  border-top: 90px solid transparent;
+  border-bottom: 90px solid transparent;
+  border-right:90px solid black;
+  border-radius: 0 100% 100% 0;
+  position: absolute;
+  right: -5px;
+  top: 20px;
+}
+
+.pacman2{
+  animation: walk 5s ;
+  animation-direction: reverse;
+  animation-fill-mode: both;
+  animation-delay: 7s;
+  background: #fffc07;
+  border-radius: 100%;
+  height: 200px;
+  top: 250px;
+  position: absolute;
+  width: 200px;
+  animation-timing-function: linear;
+}
+
+.pacman2::before{
+  background: black;
+  border-radius: 100%;
+  content: '';
+  height: 30px;
+  position: absolute;
+  left: 60px;
+  top: 30px;
+  width: 30px;
+}
+
+.mouth2{
+  animation: eat 0.7s infinite;
+  border-top: 90px solid transparent;
+  border-bottom: 90px solid transparent;
+  border-left:90px solid black;
+  border-radius: 0 100% 100% 0;
+  position: absolute;
+  left: -5px;
+  top: 20px;
+}
+
+.pacman3{
+  animation: walk 5s ;
+  animation-delay: 12s;
+  animation-fill-mode: both;
+  background: #fffc07;
+  border-radius: 100%;
+  height: 200px;
+  top: 500px;
+  position: absolute;
+  width: 200px;
+  animation-timing-function: linear;
+}
+
+.pacman3::before{
+  background: black;
+  border-radius: 100%;
+  content: '';
+  height: 30px;
+  position: absolute;
+  right: 60px;
+  top: 30px;
+  width: 30px;
+}
+
+.mouth3{
+  animation: eat 0.7s infinite;
+  border-top: 90px solid transparent;
+  border-bottom: 90px solid transparent;
+  border-right:90px solid black;
+  border-radius: 0 100% 100% 0;
+  position: absolute;
+  right: -5px;
+  top: 20px;
+}
+
+.pacman4{
+  animation: walk 5s ;
+   animation-delay: 19s;
+  animation-direction: reverse;
+  animation-fill-mode: both;
+  background: #fffc07;
+  border-radius: 100%;
+  height: 200px;
+  top: 750px;
+  position: absolute;
+  width: 200px;
+  animation-timing-function: linear;
+}
+
+.pacman4::before{
+  background: black;
+  border-radius: 100%;
+  content: '';
+  height: 30px;
+  position: absolute;
+  left: 60px;
+  top: 30px;
+  width: 30px;
+}
+
+.mouth4{
+  animation: eat 0.7s infinite;
+  border-top: 90px solid transparent;
+  border-bottom: 90px solid transparent;
+  border-left:90px solid black;
+  border-radius: 0 100% 100% 0;
+  position: absolute;
+  left: -5px;
+  top: 20px;
+}
+
+
+.ghost {
+  width: 100px;
+  height: 120px;
+  background: #f00;
+  border-radius: 50px 50px 5px 5px;
+  position: absolute;
+  margin: 20px;
+  float: right;
+}
+.ghost-red {
+  animation: walk 5s;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  background: #f00;
+  top: 40px; 
+  }
+
+  .eye {
+  background: #fff;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 27px;
+  right: 2px;
+  border-radius: 50%;
+}
+.eye-right {
+  right: 42px;
+}
+.eye:before {
+  content: "";
+  background: #00f;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 9px;
+  right: 1px;
+  border-radius: 50%;
+}
+
+.foot {
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  background: black;
+  bottom: -15px;
+  left: 5px;
+  position: absolute;
+  transform: rotate(45deg)
+}
+.foot-center {
+  left: 37px;
+}
+.foot-right {
+  left: 69px;
+}
+
+.ghost-pink {
+  background: #f00;
+  animation: walk 5s;
+  animation-delay: 6s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  animation-direction: reverse;
+  top: 270px;
+}
+
+.ghost-pink .eye:before {
+  left: 18px;
+}
+
+.ghost-red3 {
+  animation: walk 5s;
+  animation-delay: 13s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  background: #f00;
+  top: 520px; 
+  }
+
+
+.ghost-pink4 {
+  background: #f00;
+  animation: walk 5s;
+  animation-delay: 18s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  animation-direction: reverse;
+  top: 770px;
+}
+
+
+
