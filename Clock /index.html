@@ -10,39 +10,62 @@
 </head>
 
 <body>
-<div class="clock">
-
-        <div class="hour">
-            <div class="hr" id="hr"></div>
-        </div>
-
-        <div class="min">
-            <div class="mn" id="mn"></div>
-        </div>
-
-        <div class="sec">
-            <div class="sc" id="sc"></div>
-        </div>
-
-    </div>
+ <section class="working">
+   <div class="clock">
+     <div class="clock-top">
+       <div class="sec-min-container">
+         <div class="min-container">
+           <div class="min-pointer"></div>
+         </div>
+         <div class="sec-container">
+           <div class="sec-pointer"></div>
+         </div>
+       </div>
+       <div class="hours-container">
+         <div class="hours-pointer"></div>
+       </div>
+     </div>
+     <div class="clock-center">
+       <span class="number number-1">01</span>
+       <span class="number number-2">02</span>
+       <span class="number number-3">03</span>
+       <span class="number number-4">04</span>
+       <span class="number number-5">05</span>
+       <span class="number number-6">06</span>
+       <span class="number number-7">07</span>
+       <span class="number number-8">08</span>
+       <span class="number number-9">09</span>
+       <span class="number number-10">10</span>
+       <span class="number number-11">11</span>
+       <span class="number number-12">12</span>
+     </div>
+   </div>
+ </section>
 <script type="text/javascript">
-     const deg = 6;
-        const hr = document.querySelector('#hr');
-        const mn = document.querySelector('#mn');
-        const sc = document.querySelector('#sc');
-        
-        setInterval(() =>{
-            
-             let day = new Date();
-        let hh = day.getHours() * 30;
-        let mm = day.getMinutes() * deg;
-        let ss = day.getSeconds() * deg;
-        
-        hr.style.transform = `rotateZ(${(hh)+(mm/12)}deg)`;
-        mn.style.transform = `rotateZ(${mm}deg)`;
-        sc.style.transform = `rotateZ(${ss}deg)`;
-            
-        })
+     
+(function () {
+  //Converted Time in Degrees
+  //Rotate From
+  const d = new Date();
+  const convertedSeconds =
+    ((d.getSeconds() + d.getMilliseconds() / 1000) / 60) * 360;
+  const convertedMinutes = (d.getMinutes() / 60) * 360;
+  const convertedHours = ((d.getHours() + d.getMinutes() / 60) / 12) * 360;
+
+  //Rotate To
+  const rotateSecondsTo = convertedSeconds + 360;
+  const rotateMinutesTo = convertedMinutes + 360;
+  const rotateHoursTo = convertedHours + 360;
+
+  //Update Css
+  const root = document.documentElement;
+  root.style.setProperty("--s-rotate-from", convertedSeconds + "deg");
+  root.style.setProperty("--m-rotate-from", convertedMinutes + "deg");
+  root.style.setProperty("--h-rotate-from", convertedHours + "deg");
+  root.style.setProperty("--s-rotate-to", rotateSecondsTo + "deg");
+  root.style.setProperty("--m-rotate-to", rotateMinutesTo + "deg");
+  root.style.setProperty("--h-rotate-to", rotateHoursTo + "deg");
+})();
 </script>
 
 </body>
