@@ -45,14 +45,16 @@ html {
   }
 }
 
-body {
-  background-color: #121212;
+
+
+body {  
   min-height: 100vh;
   font-family: "Saira Extra Condensed", sans-serif;
   font-weight: 500;
   font-size: 1.4rem;
   text-shadow: 0 0 0.1rem var(--clock-color);
 }
+
 
 section {
   background-color: #212121;
@@ -108,7 +110,7 @@ section.working:before {
 
 .number {
   font-size: 3.2rem;
-  color: var(--clock-color);
+  color: white;
   line-height: 1;
   align-self: center;
   justify-self: center;
