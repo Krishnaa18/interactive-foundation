@@ -1,11 +1,7 @@
 body {
 /*background-color: #C29D9E;*/
 background-image: url(bg.png);
-background-size: cover;
-}
-
-.bg.png{
-  object-fit: cover;
+background-size: contain;
 }
 
 fieldset {
@@ -15,6 +11,10 @@ fieldset {
 
 fieldset legend {
   font-weight: 700;
+}
+
+.context {
+ text-align: center;
 }
 
 .answer__item {
@@ -38,12 +38,32 @@ fieldset legend {
  .answer{
   opacity: 100%;
  }
+ 
+ .intro {
+  width: 50rem;
+  margin-right: auto;
+  margin-left:auto;
+  background-color:#D8C9CA;
+  border-radius: 10px;
+ }
+h1{
+  text-align: center;
+}
+
+ p{
+  font-family: 'Noto Sans', sans-serif;
+  text-align: center;
+  font-size: 14pt;
+  padding:  0.75rem 1.25rem;
+ }
 
  legend{ 
   text-align: center;
   color: #7A264F;
   font-family: 'Libre Baskerville', serif;
   padding: 1em;
+  font-size: 14pt;
+  width: 50rem;
   }
 
 /* Hide Radio Buttons and Submit Button */

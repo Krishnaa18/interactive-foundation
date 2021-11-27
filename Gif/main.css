@@ -1,0 +1,12 @@
+ body{
+  background: white;
+}
+
+.gif {
+width: 6in; 
+height: 8in;
+animation: repeat;
+}
+
+
+
