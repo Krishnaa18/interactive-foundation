@@ -25,9 +25,19 @@ img.logo {
   font-family: 'Anton', sans-serif;
   font-size: 15pt;
   color:darkred;
-  border-radius: 20px;
+  margin-top: 200px;
  }
 
+.missionstatement {
+  font-size: 36pt;
+  color: white;
+  font-family: 'Courgette', cursive;
+  width: 45vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -150px;
+  text-align: center;
+}
 
 
 h1 {
