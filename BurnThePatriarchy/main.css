@@ -17,7 +17,7 @@ img.logo {
  }
 
  .box {
-  width: 35vw;
+  width: 50vw;
   height:50vh;
   position: relative;
   margin-left: auto;
@@ -25,8 +25,25 @@ img.logo {
   font-family: 'Anton', sans-serif;
   font-size: 15pt;
   color:darkred;
-  margin-top: 200px;
+  margin-top: 300px;
  }
+
+ .col{
+  display: inline-flex;
+ }
+
+ .a {
+padding: 10px;
+ width: 50%;
+
+ }
+
+ .b {
+  padding: 10px;
+ width: 50%;
+
+ }
+
 
 .missionstatement {
   font-size: 36pt;
@@ -40,9 +57,20 @@ img.logo {
 }
 
 img.trump {
-align-self: right;
+position: relative;
+display:inline-flex; 
+left:1050px;
 }
 
+img.mm {
+position: relative;
+display: inline-flex;
+left:-750px; 
+}
+
+.gross {
+margin-top: 200px;
+}
 
 h1 {
  text-align: center;
@@ -50,6 +78,8 @@ h1 {
  p {
   font-family: 'Noto Sans', sans-serif;
   color: white;
+  font-weight: thin;
+  font-size: 16pt;
  }
 
 
@@ -80,7 +110,7 @@ article {
  }
 
  .gf {
-margin-top: 300px;
+margin-top: 200px;
  }
 
  /* SVG FIRE */
