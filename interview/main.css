@@ -45,9 +45,12 @@ fieldset legend {
   margin-left:auto;
   background-color:#D8C9CA;
   border-radius: 10px;
+  padding: 5px;
  }
 h1{
   text-align: center;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
 }
 
  p{
@@ -59,16 +62,51 @@ h1{
  }
 
  legend{ 
-  text-align: center;
+  text-align: left;
   color: #7A264F;
   font-family: 'Futura', serif;
   font-weight:thin;
   padding: 1em;
   font-size: 14pt;
   width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
   }
 
+  .message{
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  }
 
+  .instagram {
+  text-align: center;
+  width:100px;
+  height: 30px;
+  background: white;
+  padding:5px;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 20px;
+  left: 20px
+
+}
+
+  a:link {
+    color: #7A264F;
+}
+a:visited {
+    color: #7A264F;
+}
+
+a:hover {
+color: black;
+box-shadow: 10px 10px 5px grey;
+ bottom: 18px;
+ left: 22px
+}
+
+ 
 /* Hide Radio Buttons and Submit Button */
 input[type="radio"], button {
   display: none;
@@ -103,3 +141,4 @@ form { counter-reset: quiz-score }
 /* show score once quiz has been completed */
 .message { display: none; }
 form:valid .message { display: block }
+
