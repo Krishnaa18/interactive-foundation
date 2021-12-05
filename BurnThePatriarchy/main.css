@@ -6,6 +6,8 @@ body {
 }
 
 
+
+
 img.logo { 
   height:150vh;
   width: 80vw;
@@ -74,9 +76,11 @@ margin-top: 200px;
 
 h1 {
  text-align: center;
+ font-family: 'Courgette', cursive;
+ color: darkred;
 }
  p {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: white;
   font-weight: thin;
   font-size: 16pt;
@@ -95,9 +99,30 @@ h1 {
 }
 
 
-article {
+.item {
   color: white;
   font-family: 'Montserrat', sans-serif;
+}
+
+.item1  {
+/*font-family: 'Courgette', cursive !important;*/
+font-family: 'Montserrat', sans-serif;
+
+}
+
+.item2  {
+/*font-family: 'Courgette', cursive !important;*/
+font-family: 'Montserrat', sans-serif;
+}
+
+.item3  {
+/*font-family: 'Courgette', cursive !important;*/
+font-family: 'Montserrat', sans-serif;
+}
+
+.down{
+text-align: center;
+font-size: 12pt;
 }
 
 .end{ 
@@ -112,6 +137,74 @@ article {
  .gf {
 margin-top: 200px;
  }
+
+ .grid {
+  margin-top: 60px;
+ }
+
+ .download{
+ 	margin-top: 200px;
+ 	margin-bottom: 200px;
+ }
+
+ .poster{
+ position: relative;
+ left: 20%;
+ display: flex;
+
+ }
+ 
+ .link {
+ margin-left: 20%;
+ width :450px;
+ margin-top:10px;
+ }
+
+
+
+ a {
+ position: relative;
+ text-decoration:none;
+ /*color: white;*/
+ text-align: middle;
+ font-family: 'Montserrat', sans-serif;
+font-size: 14pt;
+position: relative;
+background: darkred;
+padding: 5px;
+border-radius: 10px;
+width: 100px;
+  height: 40px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+ }
+
+ a:link{
+color: white;
+ }
+
+ a:visited{
+ color:white;
+ }
+
+.content{
+position: relative;
+color: white;
+display: flex;
+left: 54em;
+bottom: 23em;
+width: 300px;
+text-align:center;
+font-family: 'Montserrat', sans-serif;
+font-size: 14pt;
+}
 
  /* SVG FIRE */
 
@@ -208,9 +301,7 @@ margin-top: 200px;
     opacity: 0;
   }
 
-  a {
-    width: 50px;
-    height: 20px;
-    border-color: white;
-    border-width: 5px;
-  }
+
+
+
+
